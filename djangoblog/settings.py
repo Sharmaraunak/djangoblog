@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['raunakdjangoblog.herokuapp.com','127.0.0.1' ]
+ALLOWED_HOSTS = ['raunakdjangoblog.herokuapp.com' ]
 
 
 # Application definition
@@ -152,7 +152,7 @@ AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME ')
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 
-STATIC_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
 
