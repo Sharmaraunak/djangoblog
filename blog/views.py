@@ -9,11 +9,11 @@ from django.contrib.auth.models import User
 
 
 
-# def home(request):
-#     context = {
-#         'posts': Post.objects.all()
-#     }
-#     return render(request,'blog/home.html',context)
+def home(request):
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render(request,'blog/home.html',context)
 
 
 class postListView(ListView):
